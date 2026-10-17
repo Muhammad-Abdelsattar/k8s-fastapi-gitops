@@ -14,6 +14,8 @@ metadata:
   name: fastapi-app
   labels:
     app: fastapi
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   replicas: 2
   selector:
